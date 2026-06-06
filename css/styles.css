@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #6e8c8c;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif, Garamond, "微软雅黑", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.center {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.maintitle {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    margin-top: 2vh;
+    transform: translate(-50%, -50%);
+    font-size: 56px;
+    color: azure;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+    white-space: nowrap;
+    z-index: 6;
+}
+.subtitle {
+    position: absolute;
+    top: 50%;
+    left: 44%;
+    margin-top: 1em;
+    font-size: 24px;
+    color: azure;
+}
+.littletext {
+    position: absolute;
+    bottom: 175px;
+    left: 590px;
+    font-size: 16px;
+    color:aliceblue;
+}
+.method-opacity {
+    background-color: #6e8c8c;
+    display: inline-block;
+}
+.opacity-img {
+    width:90%;
+    opacity: 0.4;
+    display: block;
+}
+.card-scene {
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.card-scene:hover {
+    transform: scale(1.02);
+}
+.layer {
+    position: absolute; /* 所有图层相对于.card-scene定位 */
+}
+.custom-btn {
+    background: linear-gradient(135deg, #79969685, #ffffff80);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 320px;
+    left: 745px;
+    padding: 15px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    color: aliceblue;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    z-index: 10;
+}
+.custom-btn:hover {
+    transform: scale(1.05);
+}
+/* 图层1 - 背景 */
+.layer-background {
+    z-index: 1;
+}
+.bg-garden {
+    position: absolute;
+    top: 0;
+    left: 330px;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+.bg-flower {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 33%;
+    height: 80%;
+    object-fit: cover;
+}
+.bg-curtain {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: 33%;
+    height: 70%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+.bg-frame {
+    position: absolute;
+    top: 0;
+    left: 144px;
+    width: 83%;
+}
+.paper-1 {
+    position: absolute;
+    bottom: 66px;
+    left: -66px;
+    width: 15%;
+}
+.paper-2 {
+    position: absolute;
+    top: -220px;
+    right: -60px;
+    width: 15%;
+}
+/* 图层2 - 装饰元素 */
+.layer-decorations {
+    z-index: 2;
+}
+.gate-1 {
+    position: absolute;
+    bottom: -20px;
+    left: 100px;
+    width: 30%;
+}
+.beauty-1 {
+    position: absolute;
+    top: -1.5em;
+    right: 1em;
+    width: 25%;
+}
+.logo-1 {
+    position: absolute;
+    top: 300px;
+    left: 350px;
+    width: 10%;
+}
+.tree {
+    position: absolute;
+    bottom: 140px;
+    right: 350px;
+    width: 20%;
+}
+.shell {
+    position: absolute;
+    bottom: 220px;
+    left: 500px;
+    width: 11%;
+}
+.frame-1 {
+    position: absolute;
+    top: 100px;
+    left: 220px;
+    width: 15%;
+}
+/* 图层3 - 主要元素 */
+.layer-main {
+    z-index: 3;
+}
+.wreath {
+    position: absolute;
+    right: -350px;
+    top: 120px;
+    width: 40%;
+}
+.circle {
+    position: absolute;
+    top: -275px;
+    left: -275px;
+    width: 45%;
+}
+.circle-1 {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 18%;
+}
+.logo-2 {
+    position: absolute;
+    bottom: 390px;
+    left: 410px;
+    width: 150px;
+}
+.butterfly {
+    position: absolute;
+    bottom: 250px;
+    left: 525px;
+    width: 150px;
+}
+.paper-3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+}
+/* 图层4 - 前景装饰 */
+.layer-foreground {
+    z-index: 4;
+}
+.ribbon {
+    position: absolute;
+    top: 150px;
+    right: 200px;
+    width: 310px;
+}
+.frame-2 {
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    width: 540px;
+}
+.beauty-2 {
+    position: absolute;
+    bottom: -6em;
+    right: -1em;
+    width: 45%;
+}
+.beauty-3 {
+    position: absolute;
+    bottom: -6em;
+    left: -4em;
+    width: 33%;
+}
+.key {
+    position: absolute;
+    top: 110px;
+    left: 470px;
+    width: 15%;
+}
+.fan {
+    position: absolute;
+    top: 220px;
+    right: 500px;
+    width: 11%;
+}
+/* 图层5 - 悬浮特效 */
+.layer-floating {
+    z-index: 5;
+}
+.logo-3 {
+    position: absolute;
+    top: 270px;
+    left: 795px;
+    width: 100px;
+}
+.flower-1 {
+    position: absolute;
+    bottom: -120px;
+    left: -80px;
+    width: 18%;
+}
+.hand-pearl {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 16%;
+}
+.bird-2 {
+    position: absolute;
+    top: 0;
+    right: 440px;
+    width: 10%;
+}
+.bird-1 {
+    position: absolute;
+    bottom: 180px;
+    left: 280px;
+    width: 18%;
+}
+.hand-flower {
+    position: absolute;
+    bottom: -250px;
+    left: 250px;
+    width: 15%;
+}
+.logo-5 {
+    position: absolute;
+    right: 550px;
+    bottom: 150px;
+    width: 10%;
+    z-index: 10;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.logo-5:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 3px 8px rgba(0,0,0,0.2));
+}
+.logo-4 {/*【隐藏开关】控制当前场景动效 */
+    position: absolute;
+    top: 250px;
+    right: 480px;
+    width: 10%;
+    z-index: 10;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.logo-4:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 3px 8px rgba(0,0,0,0.2));
+}
+/* Animation */
+/* 1. Rotation */
+.rotate1 {
+    animation: rotateClockwise 60s linear infinite;
+}
+@keyframes rotateClockwise {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.rotate-1 {
+    animation: rotateCounter 60s linear infinite;
+}
+@keyframes rotateCounter {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+/* 2. Slide */
+.slide-from-left {
+    animation: slideFromLeft 1.2s ease-out;
+}
+@keyframes slideFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.slide-from-right {
+    animation: slideFromRight 1.2s ease-out;
+}        
+@keyframes slideFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.slide-from-top {
+    animation: slideFromTop 1.2s ease-out;
+}       
+@keyframes slideFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.slide-from-bottom {
+    animation: slideFromBottom 1.2s ease-out;
+}        
+@keyframes slideFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.slide-diagonal {
+    animation: slideDiagonal 1.2s ease-out;
+}       
+@keyframes slideDiagonal {
+    from {
+        opacity: 0;
+        transform: translate(-100px, -100px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+.slide-scale {
+    animation: slideScale 1.2s ease-out;
+}
+@keyframes slideScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8) translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+/* 3. Float */
+.float-up-down {
+    animation: floatUpDown 2s ease-in-out infinite;
+}       
+@keyframes floatUpDown {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+.float-graceful {
+    animation: floatGraceful 3s ease-in-out infinite;
+}        
+@keyframes floatGraceful {
+    0%, 100% {
+        transform: translateY(0px) scale(1);
+    }
+    33% {
+        transform: translateY(-10px) scale(1.02);
+    }
+    66% {
+        transform: translateY(5px) scale(0.98);
+    }
+}
+.swing-ease {
+    animation: swingEase 4s ease-in-out infinite;
+}        
+@keyframes swingEase {
+    0% { transform: translateX(0px) rotate(0deg); }
+    25% { transform: translateX(-12px) rotate(-2deg); }
+    75% { transform: translateX(12px) rotate(2deg); }
+    100% { transform: translateX(0px) rotate(0deg); }
+}
