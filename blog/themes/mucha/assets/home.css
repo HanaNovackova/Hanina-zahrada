@@ -1,0 +1,39 @@
+.method-opacity { display: inline-block; }
+.opacity-img {
+    width:60%;
+    opacity: 0.4;
+    display: block;
+}
+.layer { position: absolute; }
+.idx-1 { z-index: 1; }
+.idx-2 { z-index: 2; }
+
+.left-col-1 {
+    top: 45px;
+    left: 18%;
+    width: 255px;
+}
+.left-col-2 {
+    bottom: 275px;
+    left: 18%;
+    width: 257px;
+}
+.left-col-3 {
+    bottom: 44px;
+    left: 18%;
+    width: 225px;
+}
+.mid-col {
+    top: 20px;
+    left: 33%;
+    width: 590px;
+}
+.bg-flower-1 {}
+.bg-flower-2 {}
+.flower-1 { top: 20px; left: 400px; width: 100px; }
+.beauty-1 { bottom: 0; left: 20px; width: 300px; }
+.flower-2 { top: 200px; right: 10px; width: 80px; }
+.beauty-2 { bottom: 20px; right: 10px; width: 300px; }
+.coin { bottom: 20px; left: 400px; width: 100px; }
+.book { bottom: 200px; right: 10px; width: 100px; }
+.pen { bottom: 200px; right: 10px; width: 60px; }
