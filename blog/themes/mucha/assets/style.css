@@ -5,12 +5,11 @@
 }
 body {
     background: #6e8c8c;
+    background-image: url('/images/Mucha/40.png');
+    background-size: cover;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
     font-family: Georgia, 'Times New Roman', Times, serif, Garamond, "微软雅黑", sans-serif;
-    margin: 0;
-    padding-top: 0;
 }
 h1 {
     font-size: x-large;
@@ -26,6 +25,7 @@ h3 {
     color:grey;
 }
 a { text-decoration: none; }
+ul { list-style: none; }
 .center {
     text-align: center;
     display: flex;

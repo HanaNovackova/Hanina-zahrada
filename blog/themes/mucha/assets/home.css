@@ -1,39 +1,208 @@
-.method-opacity { display: inline-block; }
-.opacity-img {
-    width:60%;
-    opacity: 0.4;
+#mainbody {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1180px;
+    width: 100%;
+    /*background-color: rgba(255, 250, 240, 0.55);*/
+}
+.main-col {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 1vh;
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 4px;
+    text-align: center;
+    font-size: large;
+    color: azure;
+}
+.col {
+    flex: 1;
+    min-width: 250px;
+}
+header {
+    background-color: #507070;
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 5px #00000060;
+    line-height: 2.5em;
+    padding: 0 2rem;
+    color: azure;
+}
+header .main {
+    font-size: 2rem;
+}
+.left-1 {
+    background-image: url('/images/Mucha/56.png');
+    background-size: cover;
+    background-position: center;
+    margin-top: 1vh;
+    min-height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.avatar img{
     display: block;
+    margin: 3em auto 1em auto;
+	width: 40%;
+	border-radius: 100%;
+	box-shadow: 0px 5px 5px #00000060;
 }
-.layer { position: absolute; }
-.idx-1 { z-index: 1; }
-.idx-2 { z-index: 2; }
-
-.left-col-1 {
-    top: 45px;
-    left: 18%;
-    width: 255px;
+.my-name {
+    font-size: 22px;
+    font-weight: 600;
 }
-.left-col-2 {
-    bottom: 275px;
-    left: 18%;
-    width: 257px;
+.l1-bio {
+    margin-top: 6px;
+    font-size: 11px;
 }
-.left-col-3 {
-    bottom: 44px;
-    left: 18%;
-    width: 225px;
+.left-2 {
+    background-image: url('/images/Mucha/36.png');
+    background-size: cover;
+    background-position: center;
+    margin-top: 1vh;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
 }
-.mid-col {
-    top: 20px;
-    left: 33%;
-    width: 590px;
+.l2-title {
+    margin: 4vh 0;
+    font-size: large;
+    font-weight: 600;
 }
-.bg-flower-1 {}
-.bg-flower-2 {}
-.flower-1 { top: 20px; left: 400px; width: 100px; }
-.beauty-1 { bottom: 0; left: 20px; width: 300px; }
-.flower-2 { top: 200px; right: 10px; width: 80px; }
-.beauty-2 { bottom: 20px; right: 10px; width: 300px; }
-.coin { bottom: 20px; left: 400px; width: 100px; }
-.book { bottom: 200px; right: 10px; width: 100px; }
-.pen { bottom: 200px; right: 10px; width: 60px; }
+.left-3 {
+    background-image: url('/images/Mucha/41.png');
+    background-size: cover;
+    background-position: center;
+    margin-top: 1vh;
+    min-height: 255px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.l3-title {
+    margin: 3vh 0;
+    font-size: large;
+    font-weight: 600;
+}
+.left-4 {
+    background-image: url('/images/Mucha/30.png');
+    background-size: cover;
+    background-position: left;
+    min-height: 125px;
+    display: flex;
+}
+.mid-1 {
+    margin-top: 1vh;
+    border-radius: 10px;
+    background-image: url('/images/nemame-cas.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-left: 1vh;
+}
+.mid-2 {
+    background-image: url('/images/Mucha/33.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 688px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1vh;
+}
+hr {
+    border: 0;
+    border-top: 2px dotted azure;
+    margin: 1em 0;
+}
+main {
+    padding: 10% 10%;
+}
+.right-1 {
+    background-image: url('/images/Mucha/28.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 255px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.date {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+.right-2 {
+    background-image: url('/images/Mucha/60.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.r2-title {
+    margin: 3.5em 0;
+    font-size: large;
+    font-weight: 600;
+}
+.right-3 {
+    background-image: url('/images/Mucha/34.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.right-4 {
+    background-image: url('/images/Mucha/31.png');
+    background-size: cover;
+    background-position: center;
+    margin-top: 1vh;
+    min-height: 88px;
+    display: flex;
+}
+footer {
+    background-color: #507070;
+    width: 100%;
+    min-height: 88px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 5px 5px #00000060;
+    padding: 1em 2em;
+    color: azure;
+}
+.soc {
+    display: flex;
+    align-items: center;
+    border-bottom: none;
+}
+.border {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid;
+}
