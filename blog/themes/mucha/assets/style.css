@@ -24,11 +24,19 @@ h3 {
     font-weight: 600;
     color:grey;
 }
-a { text-decoration: none; }
-ul { list-style: none; }
+a { 
+    color: aliceblue;
+    text-decoration: none; 
+}
+hr {
+    border: 0;
+    border-top: 2px dotted azure;
+    margin: 1em 0;
+}
 .center {
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+ul { list-style: none; }
