@@ -39,4 +39,24 @@ hr {
     align-items: center;
     justify-content: center;
 }
-ul { list-style: none; }
+ul {
+    list-style: none;
+}
+.description {
+    font-size: 1rem;
+}
+.tags li::before{
+    content: "# ";
+}
+.list-item {
+    width: 60%; 
+    color: #222;
+}
+.readmore {
+    color: azure;
+}
+.pagination {
+    color: #0c3030;
+    font-size: large;
+    font-weight: 600;
+}

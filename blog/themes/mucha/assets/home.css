@@ -7,18 +7,18 @@
     width: 100%;
     /* background-color: rgba(255, 250, 240, 0.55); */
 }
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    text-align: center;
+    font-size: large;
+    color: azure;
+}
 .main-col {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     gap: 1vh;
-}
-nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1vh;
-    text-align: center;
-    font-size: large;
-    color: azure;
 }
 .col {
     flex: 1;
@@ -43,7 +43,7 @@ header {
     color: azure;
 }
 header .main {
-    font-size: 2rem;
+    font-size: 2em;
 }
 .left-1 {
     background-image: url('/images/Mucha/56.png');
@@ -98,12 +98,19 @@ header .main {
 }
 .l1-info {
     display: grid;
-    margin-top: 1vh;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2em;
+    gap: 1rem;
     text-align: center;
-    font-size: large;
+    font-size: 24px;
     color: white;
+    margin-bottom: 1rem;
+}
+.l1-small {
+    padding: 8px 4px;
+    font-size: small;
+}
+.l1-more {
+    font-size: 16px;
 }
 .left-2 {
     background-image: url('/images/Mucha/36.png');
@@ -131,13 +138,18 @@ header .main {
     min-height: 255px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     color: white;
+    font-size: small;
 }
 .l3-title {
+    text-align: center;
     margin: 2rem 0 0.5rem 0;
     font-size: large;
     font-weight: 600;
+}
+.l3-list {
+    text-align: left;
+    margin-left: 2.5em;
 }
 .left-4 {
     background-image: url('/images/Mucha/30.png');
@@ -245,9 +257,17 @@ main {
     min-height: 240px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     color: white;
+}
+.r3-title {
+    text-align: center;
+    margin: 3rem 0 0.5rem 0;
+    font-size: large;
+    font-weight: 600;
+}
+.r3-list {
+    text-align: left;
+    margin-left: 3.5em;
 }
 .right-4 {
     background-image: url('/images/Mucha/31.png');
